@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/*   CONTENEDOR DEL FORM     */
+/*CONTENEDOR DEL FORM */
 .form-container {
     background-color: #ffffff;
     padding: 30px 35px;
@@ -101,7 +101,7 @@ input[type="week"]:focus {
 input[type="range"] {
     width: 100%;
     margin-top: 8px;
-    accent-color: #40455f; /* Color principal del control */
+    accent-color: #40455f; 
 }
 
 output {
@@ -112,7 +112,7 @@ output {
     font-size: 20px;
 }
 
-/*   GRUPOS DE OPCIONES      */
+/*GRUPOS DE OPCIONES*/
 .radio-group,
 .checkbox-group {
     display: flex;
@@ -210,6 +210,7 @@ input[type="reset"]:hover {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
