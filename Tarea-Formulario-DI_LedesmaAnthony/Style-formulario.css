@@ -1,0 +1,215 @@
+/*ESTILOS GENERALES*/
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #505050, #e9e4f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/*   CONTENEDOR DEL FORM     */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/*TÍTULOS*/
+h1 {
+    text-align: center;
+    color: #3f51b5;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/*FORMULARIO*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+/*CAMPOS DE ENTRADA*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="file"],
+input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+input[type="color"]{
+    width: 10%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus {
+    border-color: #3f51b5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.3);
+    outline: none;
+}
+
+/*Nivel de satisfacción*/
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 8px;
+    accent-color: #40455f; /* Color principal del control */
+}
+
+output {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #51556d;
+    font-size: 20px;
+}
+
+/*   GRUPOS DE OPCIONES      */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/*BOTONES*/
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 25%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+/*Botón Enviar*/
+input[type="submit"] {
+    background-color: #019e91;
+    color: white;
+    font-size: 19px;
+}
+
+input[type="submit"]:hover {
+    background-color: #007a5c;
+    transform: scale(1.03);
+}
+
+/*Botón Borrar*/
+input[type="reset"] {
+    background-color: #019e91;
+    color: white;
+     font-size: 19px;
+}
+
+input[type="reset"]:hover {
+    background-color: #037461;
+    transform: scale(1.03);
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 480px) {
+    .form-container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    label,
+    input,
+    button {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+}
+
+/*ANIMACIÓN*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
